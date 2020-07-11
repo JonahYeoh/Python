@@ -9,6 +9,9 @@ class student(object):
 	def printStudent(self):
 		print(f'{self.id}\t{self.name}\t{self.grade}')
 	#function print
+	def __str__(self): # A more comprehensive way
+		return f'{self.id}\t{self.name}\t{self.grade}'
+	
 def class_print(class_list, st_num):
 	print('[學號]\t\t[姓名]\t[成績]')
 	for i in range(st_num):
