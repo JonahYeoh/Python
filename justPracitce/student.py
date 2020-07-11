@@ -21,7 +21,15 @@ def class_find(class_list, st_num, target):
 			return i
 	print("\t[Not Find !]")
 	return -1
-	#function add	
+	#function add
+	
+# python way
+def suggest( class_list, target ):
+	if class_list.__contains__( target ):
+		return class_list.index( target )
+	else:
+		return -1
+
 def class_add(class_list, newst):
 	newst = student(newst[0],newst[1],newst[2])
 	class_list.append(newst)
